@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <h1>Breast Cancer Prediction Software</h1>
+
+  {% if message %}
+    <div class="result {{ message_type }}">Prediction: {{ message|capitalize }}</div>
+  {% endif %}
+
+  <form method="POST" enctype="multipart/form-data">
+
+    {% for feature in features %}
+      <label>{{ feature }}: 
+        <input type="text" name="{{ feature }}">
+      </label>
+    {% endfor %}
+
+      <label>OR upload a CSV file with the same feature columns:
+        <input type="file" name="file">
+      </label>
+      <input type="submit" value="Predict">
+  </form>
+</body>
+</html>
