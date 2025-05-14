@@ -1,10 +1,10 @@
 # Breast Cancer Prediction Application
 
-This simple web application built with Flask utilizes Scikit-Learn's Logistic Regression Module to create a prediction of the nature of a tumour based on the UCI ML Breast Cancer Wisconsin (Diagnostic) dataset.
+This simple web application built with Flask utilises Scikit-Learn's Logistic Regression Module to create a prediction of the nature of a tumour based on the UCI ML Breast Cancer Wisconsin (Diagnostic) dataset.
 
-You can check out the site at [website_name.com]
+You can check out the site at [[breast-cancer-app-kqzp.onrender.com]](https://breast-cancer-app-kqzp.onrender.com)
 
-This dataset is a binary classification dataset that classifies data with 0s representing malignant tumours and 1s representing benign tumours. The training process is outlined in the 'Tasks_and_models.ipynb' Notebook attached in the project. While the model is of relatively high accuracy, 98% based on the testing data, it would be ill advised to use this model in practical situations to determine the nature of a tumour due to the relative lack of rigour utilised in the training dataset.
+This dataset is a binary classification dataset that classifies data with 0s representing malignant tumours and 1s representing benign tumours. The 'Tasks_and_models.ipynb' Notebook attached in the project outlines the training process. While the model is of relatively high accuracy, 98% based on the testing data, it would be ill-advised to use this in practical situations to determine the nature of a tumour due to the relative lack of rigour utilised in the training dataset.
 
 ---
 
